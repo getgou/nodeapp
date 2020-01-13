@@ -3,7 +3,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'DockerHub') {
 
-        def customImage = docker.build("my-Jenkapp:${env.BUILD_ID}")
+        def customImage = docker.build("getgou/my-Jenkapp")
 
         /* Push the container to the custom Registry */
         customImage.push()
