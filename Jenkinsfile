@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("getgou/mydockjenkApp")
+        app = docker.build("getgou/mydockjenk-app")
     }
 
     stage('Test image') {
